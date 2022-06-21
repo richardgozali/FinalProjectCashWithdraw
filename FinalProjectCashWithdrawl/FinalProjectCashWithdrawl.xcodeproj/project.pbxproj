@@ -14,6 +14,7 @@
 		87A8747728602C00002534F8 /* ListFundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8747628602C00002534F8 /* ListFundCard.swift */; };
 		87A87479286032B9002534F8 /* FundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A87478286032B9002534F8 /* FundCard.swift */; };
 		87A8747C286048E5002534F8 /* ModelFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8747B286048E5002534F8 /* ModelFund.swift */; };
+		87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF8EE52860599200256C56 /* CashWithdraw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		87A8747628602C00002534F8 /* ListFundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFundCard.swift; sourceTree = "<group>"; };
 		87A87478286032B9002534F8 /* FundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCard.swift; sourceTree = "<group>"; };
 		87A8747B286048E5002534F8 /* ModelFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFund.swift; sourceTree = "<group>"; };
+		87DF8EE52860599200256C56 /* CashWithdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdraw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				87A874692860225B002534F8 /* SourceOfFund.swift */,
 				87A8747628602C00002534F8 /* ListFundCard.swift */,
 				87A87478286032B9002534F8 /* FundCard.swift */,
+				87DF8EE52860599200256C56 /* CashWithdraw.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */,
 				87A87479286032B9002534F8 /* FundCard.swift in Sources */,
 				87A8747728602C00002534F8 /* ListFundCard.swift in Sources */,
 				87A8747C286048E5002534F8 /* ModelFund.swift in Sources */,

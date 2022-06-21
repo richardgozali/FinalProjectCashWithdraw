@@ -12,8 +12,7 @@ struct FundCard: View {
     var isActive : Bool = true
     var body: some View {
         ZStack {
-            
-            if isActive{
+            if isActive {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(Color.white)
                     .shadow(radius: 5)
@@ -23,39 +22,38 @@ struct FundCard: View {
                     .stroke(
                         Color.black, lineWidth: 2)
             }
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(spacing: 10) {
                 HStack {
                     Text(fund.nomorRekening)
                         .font(.system(size: 14,design: .serif))
                         .foregroundColor(.black)
-                        .multilineTextAlignment(.leading)
+                  
                     Spacer()
-                }.padding([.vertical],10)
+                }
                 HStack {
                     Text("Balance")
                         .font(.system(size: 14,design: .serif))
                         .foregroundColor(.gray)
-                        .multilineTextAlignment(.leading)
+              
                     Spacer()
-                }.padding([.vertical],10)
+                }
                 HStack {
                     Text(String(fund.nominalUang))
                         .font(.system(size: 15,design: .serif))
                         .foregroundColor(.black)
-                        .multilineTextAlignment(.leading)
                     Spacer()
-                }.padding([.vertical],10)
+                }
                 
             }
             .padding([.horizontal],20)
             
         }
-        .frame(width: 150, height: 100,alignment: .leading)
+        .frame(width: 150, height: 100)
     }
 }
 
-struct FundCard_Previews: PreviewProvider {
-    static var previews: some View {
-        FundCard(fund: fund(id: 1, nomorRekening: "1231211", nominalUang: 900000))
-    }
-}
+//struct FundCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FundCard(fund: fund(id: 1, nomorRekening: "1231211", nominalUang: 900000))
+//    }
+//}
