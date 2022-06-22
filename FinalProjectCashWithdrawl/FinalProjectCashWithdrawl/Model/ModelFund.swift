@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct fund : Decodable,Identifiable{
+struct Fund : Decodable,Identifiable,Hashable{
     var id: Int = 0
     var nomorRekening : String = ""
     var nominalUang : Int = 0;

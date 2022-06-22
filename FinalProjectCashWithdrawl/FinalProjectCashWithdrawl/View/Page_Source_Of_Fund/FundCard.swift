@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct FundCard: View {
-    var fund : fund
-    var isActive : Bool = true
+    var fund : Fund
+    var isActive : Bool = false
     var body: some View {
         ZStack {
             if isActive {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(Color.white)
-                    .shadow(radius: 5)
+                    .shadow(color: Color.green, radius: 5)
             }
             else{
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .stroke(
-                        Color.black, lineWidth: 2)
+                    .fill(Color.white)
+                    .shadow(radius: 5)
             }
             VStack(spacing: 10) {
                 HStack {
@@ -38,7 +38,7 @@ struct FundCard: View {
                     Spacer()
                 }
                 HStack {
-                    Text(String(fund.nominalUang))
+                    Text("Rp" + String(fund.nominalUang.withCommas()))
                         .font(.system(size: 15,design: .serif))
                         .foregroundColor(.black)
                     Spacer()

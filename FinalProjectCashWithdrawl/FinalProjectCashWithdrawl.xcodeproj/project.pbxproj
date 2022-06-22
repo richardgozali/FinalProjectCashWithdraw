@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968692862C00D004BD3B7 /* CustomTextField.swift */; };
+		8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686C2862C2DC004BD3B7 /* ButtonView.swift */; };
+		8709686F2862C6EC004BD3B7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686E2862C6EC004BD3B7 /* ButtonStyle.swift */; };
+		870968712862D1D2004BD3B7 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968702862D1D2004BD3B7 /* CustomPicker.swift */; };
+		8709992A2861A93400D76EDE /* Fund_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870999292861A93400D76EDE /* Fund_Repository.swift */; };
 		87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */; };
 		87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874692860225B002534F8 /* SourceOfFund.swift */; };
 		87A8746C2860225E002534F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A8746B2860225E002534F8 /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		870968692862C00D004BD3B7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8709686C2862C2DC004BD3B7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		8709686E2862C6EC004BD3B7 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		870968702862D1D2004BD3B7 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
+		870999292861A93400D76EDE /* Fund_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund_Repository.swift; sourceTree = "<group>"; };
 		87A874642860225B002534F8 /* FinalProjectCashWithdrawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectCashWithdrawl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectCashWithdrawlApp.swift; sourceTree = "<group>"; };
 		87A874692860225B002534F8 /* SourceOfFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOfFund.swift; sourceTree = "<group>"; };
@@ -40,6 +50,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		870968662862BFB3004BD3B7 /* Page_Source_Of_Fund */ = {
+			isa = PBXGroup;
+			children = (
+				87A874692860225B002534F8 /* SourceOfFund.swift */,
+				87A8747628602C00002534F8 /* ListFundCard.swift */,
+				87A87478286032B9002534F8 /* FundCard.swift */,
+			);
+			path = Page_Source_Of_Fund;
+			sourceTree = "<group>";
+		};
+		870968672862BFCE004BD3B7 /* Page_Cash_Withdraw */ = {
+			isa = PBXGroup;
+			children = (
+				87DF8EE52860599200256C56 /* CashWithdraw.swift */,
+			);
+			path = Page_Cash_Withdraw;
+			sourceTree = "<group>";
+		};
+		870968682862BFE6004BD3B7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8709686B2862C2CC004BD3B7 /* ButtonView */,
+				870968692862C00D004BD3B7 /* CustomTextField.swift */,
+				870968702862D1D2004BD3B7 /* CustomPicker.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8709686B2862C2CC004BD3B7 /* ButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				8709686C2862C2DC004BD3B7 /* ButtonView.swift */,
+				8709686E2862C6EC004BD3B7 /* ButtonStyle.swift */,
+			);
+			path = ButtonView;
+			sourceTree = "<group>";
+		};
+		870999282861A91900D76EDE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				870999292861A93400D76EDE /* Fund_Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		87A8745B2860225B002534F8 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +114,8 @@
 		87A874662860225B002534F8 /* FinalProjectCashWithdrawl */ = {
 			isa = PBXGroup;
 			children = (
+				870968682862BFE6004BD3B7 /* Component */,
+				870999282861A91900D76EDE /* Repository */,
 				87A8747A286048C3002534F8 /* Model */,
 				87A8747528602BEC002534F8 /* View */,
 				87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */,
@@ -79,10 +136,8 @@
 		87A8747528602BEC002534F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				87A874692860225B002534F8 /* SourceOfFund.swift */,
-				87A8747628602C00002534F8 /* ListFundCard.swift */,
-				87A87478286032B9002534F8 /* FundCard.swift */,
-				87DF8EE52860599200256C56 /* CashWithdraw.swift */,
+				870968662862BFB3004BD3B7 /* Page_Source_Of_Fund */,
+				870968672862BFCE004BD3B7 /* Page_Cash_Withdraw */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,9 +223,14 @@
 				87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */,
 				87A87479286032B9002534F8 /* FundCard.swift in Sources */,
 				87A8747728602C00002534F8 /* ListFundCard.swift in Sources */,
+				8709686F2862C6EC004BD3B7 /* ButtonStyle.swift in Sources */,
 				87A8747C286048E5002534F8 /* ModelFund.swift in Sources */,
+				8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */,
 				87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */,
 				87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */,
+				870968712862D1D2004BD3B7 /* CustomPicker.swift in Sources */,
+				8709992A2861A93400D76EDE /* Fund_Repository.swift in Sources */,
+				8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
