@@ -1,0 +1,30 @@
+[
+ {
+  "phone_number": "08223133319",
+  "date": "19 Jun 2022",
+  "amount": 100000,
+  "status": 1,
+  "id_history": "1",
+  "pin": "100200",
+  "time": "15:15"
+ },
+ {
+  "phone_number": "08123123312",
+  "date": "20 Jun 2022",
+  "amount": 250000,
+  "status": 1,
+  "id_history": "2",
+  "pin": "100200",
+  "time": "12:01"
+
+ },
+ {
+  "phone_number": "08100983312",
+  "date": "20 Jun 2022",
+  "amount": 300000,
+  "status": 0,
+  "id_history": "3",
+  "pin": "100200",
+  "time": "10:01"
+ }
+]

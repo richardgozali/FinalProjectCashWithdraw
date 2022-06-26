@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  FinalProjectCashWithdrawl
+
+  Created by Richard G on 23/06/22.
+  
+*/
+///English
+"eng.title" = "Source Fund";
+"eng.subtitle.source" = "Select the source account that you will use for this transaction";
+"eng.phone.title" = "Phone Number";
+"eng.phone.placeholder" = "Insert Phone Number";
+"eng.phone.error" = "Mobile number can't be empty";
+
+"eng.amount.title" = "Amount";
+"eng.amount.placeholder" = "Insert Amount";
+"eng.amount.error" = "Amount can't be empty";
+
+"eng.pin.title" = "Withdrawal Pin";
+"eng.pin.placeholder" = "Create A 6 Pin to Withdraw a Cash";
+"eng.pin.error" = "Pin can't be empty";
+
+///Indonesia
+"ind.title" = "Sumber Dana";
+"ind.phone" = "Masukan Nomor Telepon";
+

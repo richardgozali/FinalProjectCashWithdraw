@@ -15,7 +15,7 @@ struct FundCard: View {
             if isActive {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(Color.white)
-                    .shadow(color: Color.green, radius: 5)
+                    .shadow(color: Color.blue, radius: 5)
             }
             else{
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
@@ -24,21 +24,21 @@ struct FundCard: View {
             }
             VStack(spacing: 10) {
                 HStack {
-                    Text(fund.nomorRekening)
-                        .font(.system(size: 14,design: .serif))
+                    Text("IDR")
+                        .font(SubTitleFontStyle().titleFont)
                         .foregroundColor(.black)
                   
                     Spacer()
                 }
                 HStack {
                     Text("Balance")
-                        .font(.system(size: 14,design: .serif))
+                        .font(SubTitleFontStyle().titleFont)
                         .foregroundColor(.gray)
               
                     Spacer()
                 }
                 HStack {
-                    Text("Rp" + String(fund.nominalUang.withCommas()))
+                    Text(String(fund.saldo.withCommas()))
                         .font(.system(size: 15,design: .serif))
                         .foregroundColor(.black)
                     Spacer()

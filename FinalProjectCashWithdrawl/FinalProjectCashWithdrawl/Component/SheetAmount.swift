@@ -1,42 +1,17 @@
 //
-//  CustomPicker.swift
+//  SheetAmount.swift
 //  FinalProjectCashWithdrawl
 //
 //  Created by Richard G on 22/06/22.
 //
 
-import Foundation
 import SwiftUI
 
-extension Int {
-    func withCommas() -> String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .decimal
-        return numberFormatter.string(from: NSNumber(value:self))!
-    }
-}
-struct CustomPicker :View{
-    var data : [Int] = [100000 , 300000 , 400000 , 500000, 600000 ,700000 , 800000,900000,1000000]
+struct SheetAmount: View {
     @Binding var selectedAmount: Int
     var errorMsg : String = ""
     var isError : Bool = true
     var body: some View {
-        Menu {
-            Picker(selection: $selectedAmount, label: EmptyView()) {
-                ForEach(data,id: \.self) { item in
-                    if item != 0 {
-                        Text("Rp " + String(item.withCommas())).font(.system(size: 14,weight : .light, design: .serif))
-                    }
-                    
-                }
-            }
-        } label: {
-            customLabel
-        }
-    }
-    
-    var customLabel: some View {
-
         VStack(alignment: .leading, spacing: 20){
             Text("Amount").font(.system(size: 16,weight : .bold, design: .serif)).foregroundColor(Color.black)
             HStack {
@@ -55,5 +30,10 @@ struct CustomPicker :View{
                 .modifier(HiddenViewModifier(isError))
         }
     }
-    
 }
+
+//struct SheetAmount_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SheetAmount()
+//    }
+//}

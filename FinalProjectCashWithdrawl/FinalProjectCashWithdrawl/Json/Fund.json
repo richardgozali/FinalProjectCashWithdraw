@@ -1,0 +1,23 @@
+[
+  {
+    "nomor_rekening": "612333312",
+    "name": "Debit Card Platinum",
+    "saldo": 900000,
+    "pin": 111111,
+    "id_account": 1
+  },
+  {
+    "nomor_rekening": "2413312367",
+    "name": "Deposito",
+    "saldo": 8000000,
+    "pin": 222222,
+    "id_account": 2
+  },
+  {
+    "nomor_rekening": "80923185",
+    "name": "Giro",
+    "saldo": 1000000000,
+    "pin": 333333,
+    "id_account": 3
+  }
+]

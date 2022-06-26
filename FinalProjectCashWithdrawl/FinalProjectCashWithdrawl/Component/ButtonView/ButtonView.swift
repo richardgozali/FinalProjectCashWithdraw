@@ -21,11 +21,29 @@ struct ButtonView: View {
                         .font(buttonStyle.titleFontColor)
                         .frame(maxWidth: .infinity, maxHeight: 40 , alignment: .center)
                         .background(Color.blue)
-                        .cornerRadius(15)
-                        .padding()
-                        
-            }
-        })
+                        .cornerRadius(10)                    
+                }
+            })
+    }
+}
+struct ButtonCancel: View {
+    @State var buttonStyle : PrimaryButtonStyle
+    var label : String = ""
+    var action : ()->Void = {}
+    var body: some View {
+        Button(
+            action: action ,
+            label: {
+                HStack{
+                    Text(label)
+                        .foregroundColor(buttonStyle.backgroundFontColor)
+                        .font(buttonStyle.titleFontColor)
+                        .frame(maxWidth: .infinity, maxHeight: 40 , alignment: .center)
+                        .background(Color.red)
+                        .cornerRadius(10)
+                    
+                }
+            })
     }
 }
 
