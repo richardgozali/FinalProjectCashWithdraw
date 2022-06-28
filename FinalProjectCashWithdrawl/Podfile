@@ -1,0 +1,8 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target 'FinalProjectCashWithdrawl' do
+  pod 'Alamofire'
+  pod 'R.swift'
+  pod 'SwiftLint'
+end

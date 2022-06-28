@@ -7,23 +7,20 @@
 
 import Foundation
 
-struct Amount : Codable{
+struct Amount: Codable {
     var id = UUID()
     var idAmount: Int = 0
-    var amount : Int = 0
-    enum CodingKeys : String,CodingKey {
+    var amount: Int = 0
+    enum CodingKeys: String, CodingKey {
         case amount = "amount"
         case idAmount = "id_amount"
     }
-    
 }
-extension Amount : Equatable, Hashable{
+extension Amount: Equatable, Hashable {
     static func == (lhs: Amount, rhs: Amount) -> Bool {
         lhs.id == rhs.id
     }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 }
-

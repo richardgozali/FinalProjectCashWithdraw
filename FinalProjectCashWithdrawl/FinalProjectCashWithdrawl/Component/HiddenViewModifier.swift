@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct HiddenViewModifier: ViewModifier {
-    private let isHidden : Bool
-    init(_ isHidden : Bool){
+    private let isHidden: Bool
+    init(_ isHidden: Bool) {
         self.isHidden = isHidden
     }
     func body(content: Content) -> some View {
         if self.isHidden {
             EmptyView()
-        }
-        else{
+        } else {
             content
         }
     }

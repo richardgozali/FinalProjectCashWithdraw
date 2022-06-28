@@ -7,22 +7,18 @@
 
 import SwiftUI
 
-struct FormWithdraw<child :View> : View {
-    let childView : child
-    init(_ childView: () ->(child)){
+struct FormWithdraw<Child: View>: View {
+    let childView: Child
+    init(_ childView: () -> (Child)) {
         self.childView = childView()
-        
     }
     var body: some View {
-        ZStack{
+        ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .fill(Color.white)
                 .shadow(radius: 20)
             childView
-        }.padding([.horizontal] , 20)
-        .navigationBarHidden(true)
-        .frame(maxWidth: .infinity,  maxHeight: 350, alignment: .top)
+        }.padding([.horizontal], 10)
+        .frame(maxWidth: .infinity, maxHeight: 350, alignment: .top)
     }
 }
-
-

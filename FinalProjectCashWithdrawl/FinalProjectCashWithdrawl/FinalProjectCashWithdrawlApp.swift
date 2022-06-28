@@ -11,9 +11,7 @@ import SwiftUI
 struct FinalProjectCashWithdrawlApp: App {
     var body: some Scene {
         WindowGroup {
-           
             SourceOfFund()
-            
         }
     }
 }

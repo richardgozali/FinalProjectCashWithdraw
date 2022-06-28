@@ -9,7 +9,7 @@ import Foundation
 
 struct JsonReader {
     static func loadDataFrom(filename: String) -> Data? {
-        guard let path = Bundle.main.path(forResource: filename, ofType: "json")else{
+        guard let path = Bundle.main.path(forResource: filename, ofType: "json")else {
             return nil
         }
         do {
@@ -18,8 +18,7 @@ struct JsonReader {
                 options: .mappedIfSafe
             )
             return jsonData
-        }
-        catch{
+        } catch {
             return nil
         }
     }

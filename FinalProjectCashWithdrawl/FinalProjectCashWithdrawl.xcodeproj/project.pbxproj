@@ -10,24 +10,27 @@
 		8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968692862C00D004BD3B7 /* CustomTextField.swift */; };
 		8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686C2862C2DC004BD3B7 /* ButtonView.swift */; };
 		8709686F2862C6EC004BD3B7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686E2862C6EC004BD3B7 /* Style.swift */; };
-		870968712862D1D2004BD3B7 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968702862D1D2004BD3B7 /* CustomPicker.swift */; };
 		870968732862EA91004BD3B7 /* HiddenViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968722862EA91004BD3B7 /* HiddenViewModifier.swift */; };
 		870968752862EBF7004BD3B7 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968742862EBF7004BD3B7 /* ExtensionView.swift */; };
 		87096877286307D2004BD3B7 /* SheetAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87096876286307D2004BD3B7 /* SheetAmount.swift */; };
 		87096879286308B7004BD3B7 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87096878286308B7004BD3B7 /* SheetView.swift */; };
 		8709687B28630C2E004BD3B7 /* FormWithdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709687A28630C2E004BD3B7 /* FormWithdraw.swift */; };
-		8709992A2861A93400D76EDE /* Fund_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870999292861A93400D76EDE /* Fund_Repository.swift */; };
 		874194022863EEFB00170828 /* TransactionPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874194012863EEFB00170828 /* TransactionPin.swift */; };
-		874194092864076500170828 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 874194082864076500170828 /* Localizable.strings */; };
 		8742AA7A2867F92200E65D84 /* CardHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8742AA792867F92200E65D84 /* CardHistoryToken.swift */; };
 		8742AA7D2867FBDB00E65D84 /* DetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8742AA7C2867FBDB00E65D84 /* DetailHistoryToken.swift */; };
 		876443E428655D170082FE2F /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443E328655D170082FE2F /* JsonReader.swift */; };
-		876443E628655FE30082FE2F /* Articel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443E528655FE30082FE2F /* Articel.swift */; };
 		876443EE2865740F0082FE2F /* Fund.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443ED2865740F0082FE2F /* Fund.json */; };
 		876443F02865891C0082FE2F /* Amount.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443EF2865891C0082FE2F /* Amount.json */; };
 		876443F2286589590082FE2F /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443F1286589590082FE2F /* Amount.swift */; };
 		876443F42865975D0082FE2F /* History.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443F32865975D0082FE2F /* History.json */; };
 		876443F6286598010082FE2F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443F5286598010082FE2F /* History.swift */; };
+		8790A103286960EF0027D96C /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A102286960EF0027D96C /* BottomSheet.swift */; };
+		8790A107286967340027D96C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A106286967340027D96C /* R.generated.swift */; };
+		8790A109286967420027D96C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8790A108286967420027D96C /* Localizable.strings */; };
+		8790A10B286981D00027D96C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A10A286981D00027D96C /* ErrorMessage.swift */; };
+		8790A10D28699E730027D96C /* ActiveDetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A10C28699E730027D96C /* ActiveDetailHistoryToken.swift */; };
+		8790A10F2869A0310027D96C /* CancelDetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A10E2869A0310027D96C /* CancelDetailHistoryToken.swift */; };
+		8790D73C286A975800680F6F /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790D73B286A975800680F6F /* BaseUrl.swift */; };
 		87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */; };
 		87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874692860225B002534F8 /* SourceOfFund.swift */; };
 		87A8746C2860225E002534F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A8746B2860225E002534F8 /* Assets.xcassets */; };
@@ -38,30 +41,35 @@
 		87B822C028642787007E5A9B /* NavigationCustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B822BF28642787007E5A9B /* NavigationCustomBar.swift */; };
 		87B822C228645150007E5A9B /* HistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B822C128645150007E5A9B /* HistoryToken.swift */; };
 		87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF8EE52860599200256C56 /* CashWithdraw.swift */; };
+		FA321A8FAADD1DB3DF40ED58 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.debug.xcconfig"; sourceTree = "<group>"; };
 		870968692862C00D004BD3B7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8709686C2862C2DC004BD3B7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		8709686E2862C6EC004BD3B7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		870968702862D1D2004BD3B7 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 		870968722862EA91004BD3B7 /* HiddenViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenViewModifier.swift; sourceTree = "<group>"; };
 		870968742862EBF7004BD3B7 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		87096876286307D2004BD3B7 /* SheetAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAmount.swift; sourceTree = "<group>"; };
 		87096878286308B7004BD3B7 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		8709687A28630C2E004BD3B7 /* FormWithdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWithdraw.swift; sourceTree = "<group>"; };
-		870999292861A93400D76EDE /* Fund_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund_Repository.swift; sourceTree = "<group>"; };
 		874194012863EEFB00170828 /* TransactionPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPin.swift; sourceTree = "<group>"; };
-		874194082864076500170828 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8742AA792867F92200E65D84 /* CardHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHistoryToken.swift; sourceTree = "<group>"; };
 		8742AA7C2867FBDB00E65D84 /* DetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryToken.swift; sourceTree = "<group>"; };
 		876443E328655D170082FE2F /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
-		876443E528655FE30082FE2F /* Articel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articel.swift; sourceTree = "<group>"; };
 		876443ED2865740F0082FE2F /* Fund.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fund.json; sourceTree = "<group>"; };
 		876443EF2865891C0082FE2F /* Amount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Amount.json; sourceTree = "<group>"; };
 		876443F1286589590082FE2F /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		876443F32865975D0082FE2F /* History.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = History.json; sourceTree = "<group>"; };
 		876443F5286598010082FE2F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		8790A102286960EF0027D96C /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		8790A106286967340027D96C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8790A108286967420027D96C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8790A10A286981D00027D96C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		8790A10C28699E730027D96C /* ActiveDetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDetailHistoryToken.swift; sourceTree = "<group>"; };
+		8790A10E2869A0310027D96C /* CancelDetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelDetailHistoryToken.swift; sourceTree = "<group>"; };
+		8790D73B286A975800680F6F /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
 		87A874642860225B002534F8 /* FinalProjectCashWithdrawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectCashWithdrawl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectCashWithdrawlApp.swift; sourceTree = "<group>"; };
 		87A874692860225B002534F8 /* SourceOfFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOfFund.swift; sourceTree = "<group>"; };
@@ -73,6 +81,8 @@
 		87B822BF28642787007E5A9B /* NavigationCustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCustomBar.swift; sourceTree = "<group>"; };
 		87B822C128645150007E5A9B /* HistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryToken.swift; sourceTree = "<group>"; };
 		87DF8EE52860599200256C56 /* CashWithdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdraw.swift; sourceTree = "<group>"; };
+		99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProjectCashWithdrawl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.release.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA321A8FAADD1DB3DF40ED58 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,13 +121,15 @@
 			children = (
 				8709686B2862C2CC004BD3B7 /* ButtonView */,
 				870968692862C00D004BD3B7 /* CustomTextField.swift */,
+				8790D73B286A975800680F6F /* BaseUrl.swift */,
 				8709686E2862C6EC004BD3B7 /* Style.swift */,
-				870968702862D1D2004BD3B7 /* CustomPicker.swift */,
 				870968722862EA91004BD3B7 /* HiddenViewModifier.swift */,
 				870968742862EBF7004BD3B7 /* ExtensionView.swift */,
 				87096876286307D2004BD3B7 /* SheetAmount.swift */,
 				87096878286308B7004BD3B7 /* SheetView.swift */,
 				87B822BF28642787007E5A9B /* NavigationCustomBar.swift */,
+				8790A102286960EF0027D96C /* BottomSheet.swift */,
+				8790A10A286981D00027D96C /* ErrorMessage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -132,7 +145,6 @@
 		870999282861A91900D76EDE /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				870999292861A93400D76EDE /* Fund_Repository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -145,18 +157,20 @@
 			path = PageTransactionPin;
 			sourceTree = "<group>";
 		};
-		874194032863F8E600170828 /* Localizations */ = {
+		874194032863F8E600170828 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				874194082864076500170828 /* Localizable.strings */,
+				8790A108286967420027D96C /* Localizable.strings */,
 			);
-			path = Localizations;
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		8742AA7B2867FB5200E65D84 /* PageDetailHistory */ = {
 			isa = PBXGroup;
 			children = (
 				8742AA7C2867FBDB00E65D84 /* DetailHistoryToken.swift */,
+				8790A10C28699E730027D96C /* ActiveDetailHistoryToken.swift */,
+				8790A10E2869A0310027D96C /* CancelDetailHistoryToken.swift */,
 			);
 			path = PageDetailHistory;
 			sourceTree = "<group>";
@@ -193,6 +207,8 @@
 			children = (
 				87A874662860225B002534F8 /* FinalProjectCashWithdrawl */,
 				87A874652860225B002534F8 /* Products */,
+				A79FD5160607DBE89B6EF171 /* Pods */,
+				FE553CD052F2459CEDEA3560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,9 +223,10 @@
 		87A874662860225B002534F8 /* FinalProjectCashWithdrawl */ = {
 			isa = PBXGroup;
 			children = (
+				8790A106286967340027D96C /* R.generated.swift */,
 				876443E728656A870082FE2F /* Json */,
 				876443E228655CFF0082FE2F /* Util */,
-				874194032863F8E600170828 /* Localizations */,
+				874194032863F8E600170828 /* Localization */,
 				870968682862BFE6004BD3B7 /* Component */,
 				870999282861A91900D76EDE /* Repository */,
 				87A8747A286048C3002534F8 /* Model */,
@@ -245,11 +262,27 @@
 			isa = PBXGroup;
 			children = (
 				87A8747B286048E5002534F8 /* ModelFund.swift */,
-				876443E528655FE30082FE2F /* Articel.swift */,
 				876443F1286589590082FE2F /* Amount.swift */,
 				876443F5286598010082FE2F /* History.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A79FD5160607DBE89B6EF171 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */,
+				D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE553CD052F2459CEDEA3560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87A874722860225E002534F8 /* Build configuration list for PBXNativeTarget "FinalProjectCashWithdrawl" */;
 			buildPhases = (
+				C59E1942BA6BFA48E88CC101 /* [CP] Check Pods Manifest.lock */,
+				8790A0F8286946040027D96C /* ShellScript */,
 				87A874602860225B002534F8 /* Sources */,
 				87A874612860225B002534F8 /* Frameworks */,
 				87A874622860225B002534F8 /* Resources */,
+				A875F1304C05539EBE2703E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,7 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876443F02865891C0082FE2F /* Amount.json in Resources */,
-				874194092864076500170828 /* Localizable.strings in Resources */,
+				8790A109286967420027D96C /* Localizable.strings in Resources */,
 				87A8746F2860225E002534F8 /* Preview Assets.xcassets in Resources */,
 				876443EE2865740F0082FE2F /* Fund.json in Resources */,
 				876443F42865975D0082FE2F /* History.json in Resources */,
@@ -322,33 +358,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8790A0F8286946040027D96C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+				"",
+				"",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		A875F1304C05539EBE2703E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59E1942BA6BFA48E88CC101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinalProjectCashWithdrawl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87A874602860225B002534F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				870968752862EBF7004BD3B7 /* ExtensionView.swift in Sources */,
+				8790A10F2869A0310027D96C /* CancelDetailHistoryToken.swift in Sources */,
+				8790A10D28699E730027D96C /* ActiveDetailHistoryToken.swift in Sources */,
 				87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */,
 				87B822C228645150007E5A9B /* HistoryToken.swift in Sources */,
 				87A87479286032B9002534F8 /* FundCard.swift in Sources */,
 				87A8747728602C00002534F8 /* ListFundCard.swift in Sources */,
 				8709686F2862C6EC004BD3B7 /* Style.swift in Sources */,
 				87B822C028642787007E5A9B /* NavigationCustomBar.swift in Sources */,
+				8790A10B286981D00027D96C /* ErrorMessage.swift in Sources */,
+				8790D73C286A975800680F6F /* BaseUrl.swift in Sources */,
 				87096877286307D2004BD3B7 /* SheetAmount.swift in Sources */,
 				87A8747C286048E5002534F8 /* ModelFund.swift in Sources */,
 				87096879286308B7004BD3B7 /* SheetView.swift in Sources */,
+				8790A103286960EF0027D96C /* BottomSheet.swift in Sources */,
+				8790A107286967340027D96C /* R.generated.swift in Sources */,
 				8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */,
 				87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */,
 				87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */,
 				876443F6286598010082FE2F /* History.swift in Sources */,
 				8709687B28630C2E004BD3B7 /* FormWithdraw.swift in Sources */,
 				874194022863EEFB00170828 /* TransactionPin.swift in Sources */,
-				876443E628655FE30082FE2F /* Articel.swift in Sources */,
 				870968732862EA91004BD3B7 /* HiddenViewModifier.swift in Sources */,
 				876443F2286589590082FE2F /* Amount.swift in Sources */,
 				876443E428655D170082FE2F /* JsonReader.swift in Sources */,
-				870968712862D1D2004BD3B7 /* CustomPicker.swift in Sources */,
-				8709992A2861A93400D76EDE /* Fund_Repository.swift in Sources */,
 				8742AA7A2867F92200E65D84 /* CardHistoryToken.swift in Sources */,
 				8742AA7D2867FBDB00E65D84 /* DetailHistoryToken.swift in Sources */,
 				8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */,
@@ -474,6 +577,7 @@
 		};
 		87A874732860225E002534F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +606,7 @@
 		};
 		87A874742860225E002534F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

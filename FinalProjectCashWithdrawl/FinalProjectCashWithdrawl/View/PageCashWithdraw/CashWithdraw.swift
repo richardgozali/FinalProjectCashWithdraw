@@ -10,80 +10,92 @@ import SwiftUI
 struct CashWithdraw: View {
     @State var phoneNumber: String = ""
     @State var pin: String = ""
-    @State var selectedAmount : Int = 0
-    @State private var isErrorPhone : Bool = true
-    @State private var isErrorPin : Bool = true
-    @State private var isErrorAmount : Bool = true
+    @State var selectedAmount: Int = 0
+    @State private var isErrorPhone: Bool = true
+    @State private var isErrorPin: Bool = true
+    @State private var isErrorAmount: Bool = true
     @State private var showingSheet = false
-    @Binding var fund : Fund
-    @Binding var sourceNavigation : String?
-    @State private var navigationSelection : String? = nil
+    @Binding var fund: Fund
+    @Binding var listFund: [Fund]
+    @Binding var sourceNavigation: String?
+    @State var navigationSelection: String?
     @State var isNavigationBarHidden: Bool = false
     @State private var selectedShow = false
-    private func renderLink() -> some View{
-        Group{
-            NavigationLink(destination: TransactionPin(fund: $fund,sourceNavigation: $sourceNavigation), tag: "TransactionPin",selection: $navigationSelection){EmptyView()}
-            NavigationLink(destination: HistoryToken(sourceNavigation: $sourceNavigation), tag: "History",selection: $navigationSelection){EmptyView()}
+    private func renderLink() -> some View {
+        Group {
+            NavigationLink(
+                destination: TransactionPin(
+                    fund: $fund,
+                    sourceNavigation: $sourceNavigation,
+                    listFunds: $listFund
+                ),
+                tag: "TransactionPin",
+                selection: $navigationSelection
+            ) {EmptyView()}
+            NavigationLink(
+                destination: HistoryToken(
+                    sourceNavigation: $sourceNavigation
+                ),
+                tag: "History",
+                selection: $navigationSelection
+            ) {EmptyView()}
         }
     }
-    private func onMovePage(){
+    private func onMovePage() {
         navigationSelection = "TransactionPin"
     }
-    private func onMoveHistoryPage(){
+    private func onMoveHistoryPage() {
         navigationSelection = "History"
     }
-    private func onCheck(){
+    private func onCheck() {
         if phoneNumber ==  "" {
             isErrorPhone = false
-        }
-        else{
+        } else {
             isErrorPhone = true
-            
         }
-        
-        if pin ==  "" || pin.count < 6{
+        if pin ==  "" || pin.count < 6 {
             isErrorPin = false
-        }
-        else{
+        } else {
             isErrorPin = true
         }
-        
         if selectedAmount ==  0 {
             isErrorAmount = false
-        }
-        else{
+        } else {
             isErrorAmount = true
         }
         if isErrorPhone || isErrorPin || isErrorAmount {
             if fund.saldo > selectedAmount {
                 onMovePage()
-            }
-            else{
+            } else {
                 print("Saldo Tidak Cukup")
                 self.selectedShow = true
-            
             }
         }
     }
-    
+
     var body: some View {
         renderLink()
-        NavigationCustomBar(title: "Cash Withdraw", isImage: true, navigationSelection: $navigationSelection){
-            VStack (alignment: .leading,spacing : 10){
-                FormWithdraw{
-                    VStack(alignment: .leading, spacing: 20){
+        NavigationCustomBar(
+            title: R.string.localizable.engCashwithdrawTitle(),
+            isImage: true,
+            navigationSelection: $navigationSelection
+        ) {
+            VStack(alignment: .leading, spacing: 10) {
+                FormWithdraw {
+                    VStack(alignment: .leading, spacing: 20) {
                         CustomTextField(
                             value: $phoneNumber,
-                            isError : isErrorPhone, title: NSLocalizedString("eng.phone.title", comment: ""),
-                            placeHolder: NSLocalizedString("eng.phone.placeholder", comment: ""),
-                            errorMassage:  NSLocalizedString("eng.phone.error", comment: "")
+                            isError: isErrorPhone,
+                            title: R.string.localizable.engPhoneTitle(),
+                            placeHolder: R.string.localizable.engPhonePlaceholder(),
+                            errorMassage: R.string.localizable.engPhoneError()
                         )
                         Button(action: {
                             self.showingSheet.toggle()
                         }, label: {
                             SheetAmount(
                                 selectedAmount: $selectedAmount,
-                                errorMsg:NSLocalizedString("eng.amount.error", comment: ""),
+                                errorMsg: R.string.localizable.engAmountError(),
                                 isError: isErrorAmount
                             )
                         }).sheet(isPresented: $showingSheet) {
@@ -91,29 +103,37 @@ struct CashWithdraw: View {
                         }
                         CustomTextField(
                             value: $pin,
-                            isError : isErrorPin,
-                            title: NSLocalizedString("eng.pin.title", comment: ""),
-                            placeHolder: NSLocalizedString("eng.pin.placeholder", comment: ""),
-                            errorMassage: NSLocalizedString("eng.pin.error", comment: "")
+                            isError: isErrorPin,
+                            title: R.string.localizable.engPinTitle(),
+                            placeHolder: R.string.localizable.engPinPlaceholder(),
+                            errorMassage: R.string.localizable.engPinError()
                         )
-                    }.padding(.all,30)
+                    }.padding(.all, 30)
                 }
                 Spacer()
                 ButtonView(
                     buttonStyle: PrimaryButtonStyle(),
-                    label: "Continue",action: {
+                    label: "Continue", action: {
                         onCheck()
-                    }).frame(alignment : .bottom)
+                    }).frame(alignment: .bottom)
 
-            }.padding([.all] , 20)
-                .alert(isPresented: $selectedShow) {
-                    Alert(title: Text("Insufficient Balance"), message: Text("Your account balance is insufficient to continue this transaction"), dismissButton: .default(Text("Got it!")))
-                    
+            }.padding([.all], 20)
+                .bottomSheet(isPresented: $selectedShow) {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text(R.string.localizable.engBalanceTitle()).font(TitleFontStyle().titleFont)
+                        Text(R.string.localizable.engBalanceSubtitle())
+                        ButtonCancel(
+                            buttonStyle: PrimaryButtonStyle(),
+                            label: "Ok", action: {
+                                withAnimation(Animation.easeInOut) {
+                                    self.selectedShow = false
+                                }
+                            }
+                        )
+                    }
                 }
-                
-            
+
         }
-        
+
     }
 }
-

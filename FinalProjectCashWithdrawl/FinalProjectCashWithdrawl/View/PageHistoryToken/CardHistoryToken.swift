@@ -10,32 +10,29 @@ import SwiftUI
 struct CardHistoryToken: View {
     @Binding var selectedHistory: History
     var body: some View {
-        ZStack{
+        ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(Color.white)
                 .shadow(radius: 5)
-            HStack{
+            HStack {
                 Image(systemName: "creditcard")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 30, maxHeight: .infinity)
                     .clipped()
-                    .padding(.leading,10)
-                
-                VStack(alignment: .leading, spacing: 10){
-                    HStack{
+                    .padding(.leading, 10)
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack {
                         Text(selectedHistory.phoneNumber).font(TitleCardFontStyle().titleFont)
                         Spacer()
                         Text(String(selectedHistory.amount.withCommas())).font(SubTitleCardFontStyle().titleFont)
-                        
                     }
-                    HStack{
+                    HStack {
                         if selectedHistory.status == 1 {
                             Text("Active")
                                 .font(SubTitleCardFontStyle().titleFont)
                                 .foregroundColor(Color.green)
-                        }
-                        else{
+                        } else {
                             Text("Cancel")
                                 .font(SubTitleCardFontStyle().titleFont)
                                 .foregroundColor(Color.red)
@@ -46,17 +43,9 @@ struct CardHistoryToken: View {
                             .font(SubTitleCardFontStyle().titleFont)
                             .foregroundColor(Color.gray)
                     }
-                }.padding(.horizontal,10)
-            }.padding(.vertical,20)
-            
-        }.padding([.horizontal],30)
-            .padding([.vertical],10)
-       
+                }.padding(.horizontal, 10)
+            }.padding(.vertical, 20)
+        }.padding([.horizontal], 30)
+            .padding([.vertical], 10)
     }
 }
-
-//struct CardHistoryToken_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CardHistoryToken()
-//    }
-//}
