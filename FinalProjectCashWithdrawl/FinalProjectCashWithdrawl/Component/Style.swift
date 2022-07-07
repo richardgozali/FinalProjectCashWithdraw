@@ -34,6 +34,11 @@ struct TitleCardFontStyle: TextFontProctocol {
     var fontColor: Color {Color.black}
 
 }
+struct TitleFundCardFontStyle: TextFontProctocol {
+    var titleFont: Font {Font.system(size: 14, weight: .bold, design: .serif)}
+    var fontColor: Color {Color.black}
+
+}
 struct SubTitleCardFontStyle: TextFontProctocol {
     var titleFont: Font {Font.system(size: 14, weight: .regular, design: .serif)}
     var fontColor: Color {Color.black}

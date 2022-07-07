@@ -11,6 +11,7 @@ struct ActiveDetailHistoryToken: View {
     @Binding var selectedHistoryToken: History
     @Binding var sourceHistoryNavigation: String?
     @Binding var sourceNavigation: String?
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Image("IconMoney")
@@ -18,8 +19,8 @@ struct ActiveDetailHistoryToken: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: 200)
                 .clipped()
-            Text("Cash Withdrawal Token").font(TitleFontStyle().titleFont)
-            Text("Input The 6-digit token below to the ATM screen to withdraw cash.")
+            Text(R.string.localizable.engCashwithdrawTitle()).font(TitleFontStyle().titleFont)
+            Text(R.string.localizable.engCashwithdrawltokenPin())
                 .font(SubTitleFontStyle().titleFont)
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
@@ -32,10 +33,8 @@ struct ActiveDetailHistoryToken: View {
                         .font(TitleFontStyle().titleFont)
                 }
             }.frame(maxHeight: 40)
-            Text("This token is for the withdrawal of IDR"
-                 + "\n"  +
-                 String(self.selectedHistoryToken.amount.withCommas())
-                 + "\n Valid Until :"
+            Text(R.string.localizable.engActivecashwithdrawlSubtitle(
+                String(self.selectedHistoryToken.amount.withCommas()))
             ).font(SubTitleFontStyle().titleFont)
              .foregroundColor(Color.gray)
              .multilineTextAlignment(.center)
@@ -52,7 +51,8 @@ struct ActiveDetailHistoryToken: View {
             ButtonCancel(
                 buttonStyle: PrimaryButtonStyle(),
                 label: "Cancel Withdraw", action: {
-                    sourceHistoryNavigation = nil
+//                    sourceHistoryNavigation = nil
+                    self.presentationMode.wrappedValue.dismiss()
                 }
             )
             Spacer()

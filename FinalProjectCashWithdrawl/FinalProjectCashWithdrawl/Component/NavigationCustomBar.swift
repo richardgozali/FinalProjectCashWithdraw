@@ -10,22 +10,22 @@ import SwiftUI
 struct NavigationCustomBar <Child: View> :  View {
     var title: String
     var isImage: Bool? = false
-    @Binding var navigationSelection: String?
+    var callBack: () -> Void?
     let childView: Child
     init(title: String,
          isImage: Bool?,
-         navigationSelection: Binding<String?> = .constant(nil),
+         callBack: @escaping () -> Void?,
          _ childView: () -> (Child)
     ) {
         self.childView = childView()
         self.title = title
         self.isImage = isImage
-        self._navigationSelection = navigationSelection
+        self.callBack = callBack
     }
     private func onMovePage() {
     }
     var body: some View {
-        ZStack {
+        VStack {
             childView
         }
         .navigationBarHidden(false)
@@ -38,9 +38,9 @@ struct NavigationCustomBar <Child: View> :  View {
                         Text(title).font(TitleFontStyle().titleFont)
                         Spacer()
                         Image(systemName: "clock.arrow.circlepath")
-                        .onTapGesture {
-                            navigationSelection = "History"
-                        }
+                            .onTapGesture {
+                                callBack()
+                            }
                     } else {
                         Text(title).font(TitleFontStyle().titleFont)
                     }

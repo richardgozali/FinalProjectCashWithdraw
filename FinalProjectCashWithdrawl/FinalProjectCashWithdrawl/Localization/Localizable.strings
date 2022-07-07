@@ -22,5 +22,13 @@
 "eng.error.message" = "8001 Wrong Password";
 "eng.balance" = "Balance";
 "eng.idr" = "IDR";
+"eng.continue" = "Continue";
+"eng.insertpin" = "Insert the 6-digit Transaction PIN";
+"eng.loading" = "loading";
+"eng.transaction.title" = "Transaction Pin";
+"eng.ok" = "Ok";
+"eng.cashwithdrawl.token.title" = "Cash Withdrawal Token";
+"eng.cashwithdrawltoken.pin" = "Input The 6-digit token below to the ATM screen to withdraw cash.";
+"eng.activecashwithdrawl.subtitle" = "This token is for the withdrawal of IDR \n %@ \n Valid Until :";
 "ind.title" = "Sumber Dana";
 "ind.phone" = "Masukan Nomor Telepon";

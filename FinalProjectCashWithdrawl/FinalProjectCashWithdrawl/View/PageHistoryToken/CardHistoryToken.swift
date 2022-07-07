@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardHistoryToken: View {
-    @Binding var selectedHistory: History
+    var selectedHistory: History
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)

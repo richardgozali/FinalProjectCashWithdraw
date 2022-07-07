@@ -12,25 +12,19 @@ struct DetailHistoryToken: View {
     @Binding var sourceNavigation: String?
     @Binding var sourceHistoryNavigation: String?
     var body: some View {
-        NavigationCustomBar(
-            title: "Detail History",
-            isImage: false,
-            navigationSelection: $sourceHistoryNavigation) {
-                VStack {
-                    if self.selectedHistoryToken.status == 1 {
-                        ActiveDetailHistoryToken(
-                            selectedHistoryToken: $selectedHistoryToken,
-                            sourceHistoryNavigation: $sourceHistoryNavigation,
-                            sourceNavigation: $sourceNavigation
-                        )
-                    } else {
-                        CancelDetailHistoryToken(
-                            selectedHistoryToken: $selectedHistoryToken,
-                            navigationSelection: $sourceHistoryNavigation)
-                    }
-                }.onAppear {
-                    print($sourceHistoryNavigation)
-                }
-        }
+        VStack {
+            if selectedHistoryToken.status == 1 {
+                ActiveDetailHistoryToken(
+                    selectedHistoryToken: $selectedHistoryToken,
+                    sourceHistoryNavigation: $sourceHistoryNavigation,
+                    sourceNavigation: $sourceNavigation
+                )
+            } else {
+                CancelDetailHistoryToken(
+                    selectedHistoryToken: $selectedHistoryToken,
+                    sourceHistoryNavigation: $sourceHistoryNavigation
+                )
+            }
+        }.navigationBarHidden(true)
     }
 }

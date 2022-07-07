@@ -2,7 +2,12 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'FinalProjectCashWithdrawl' do
+  inhibit_all_warnings!
   pod 'Alamofire'
   pod 'R.swift'
   pod 'SwiftLint'
+  pod 'AlamofireObjectMapper', '5.2.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crashlytics'
+  pod 'Wormholy', :configurations => ['Dev','Sit','Prod']
 end

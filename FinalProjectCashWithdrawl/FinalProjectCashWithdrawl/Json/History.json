@@ -4,7 +4,7 @@
   "date": "19 Jun 2022",
   "amount": 100000,
   "status": 1,
-  "id_history": "1",
+  "id_history": 1,
   "pin": "100200",
   "time": "15:15"
  },
@@ -13,7 +13,7 @@
   "date": "20 Jun 2022",
   "amount": 250000,
   "status": 1,
-  "id_history": "2",
+  "id_history": 2,
   "pin": "100200",
   "time": "12:01"
 
@@ -23,7 +23,7 @@
   "date": "20 Jun 2022",
   "amount": 300000,
   "status": 0,
-  "id_history": "3",
+  "id_history": 3,
   "pin": "100200",
   "time": "10:01"
  }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6D3DDD0B74B04200F8A402 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509A67C5CD4B74B0D01D00BA /* Pods_FinalProjectCashWithdrawl.framework */; };
 		8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870968692862C00D004BD3B7 /* CustomTextField.swift */; };
 		8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686C2862C2DC004BD3B7 /* ButtonView.swift */; };
 		8709686F2862C6EC004BD3B7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709686E2862C6EC004BD3B7 /* Style.swift */; };
@@ -18,12 +19,14 @@
 		874194022863EEFB00170828 /* TransactionPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874194012863EEFB00170828 /* TransactionPin.swift */; };
 		8742AA7A2867F92200E65D84 /* CardHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8742AA792867F92200E65D84 /* CardHistoryToken.swift */; };
 		8742AA7D2867FBDB00E65D84 /* DetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8742AA7C2867FBDB00E65D84 /* DetailHistoryToken.swift */; };
+		8761DDE9286BE55E0045926A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8761DDE8286BE55E0045926A /* GoogleService-Info.plist */; };
 		876443E428655D170082FE2F /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443E328655D170082FE2F /* JsonReader.swift */; };
 		876443EE2865740F0082FE2F /* Fund.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443ED2865740F0082FE2F /* Fund.json */; };
 		876443F02865891C0082FE2F /* Amount.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443EF2865891C0082FE2F /* Amount.json */; };
 		876443F2286589590082FE2F /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443F1286589590082FE2F /* Amount.swift */; };
 		876443F42865975D0082FE2F /* History.json in Resources */ = {isa = PBXBuildFile; fileRef = 876443F32865975D0082FE2F /* History.json */; };
 		876443F6286598010082FE2F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876443F5286598010082FE2F /* History.swift */; };
+		876C9F21286BF3E40040D174 /* AnyliticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876C9F20286BF3E40040D174 /* AnyliticManager.swift */; };
 		8790A103286960EF0027D96C /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A102286960EF0027D96C /* BottomSheet.swift */; };
 		8790A107286967340027D96C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A106286967340027D96C /* R.generated.swift */; };
 		8790A109286967420027D96C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8790A108286967420027D96C /* Localizable.strings */; };
@@ -31,21 +34,34 @@
 		8790A10D28699E730027D96C /* ActiveDetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A10C28699E730027D96C /* ActiveDetailHistoryToken.swift */; };
 		8790A10F2869A0310027D96C /* CancelDetailHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790A10E2869A0310027D96C /* CancelDetailHistoryToken.swift */; };
 		8790D73C286A975800680F6F /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790D73B286A975800680F6F /* BaseUrl.swift */; };
+		87A1EDF628752A0C007F293A /* TransactionPinCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1EDF528752A0C007F293A /* TransactionPinCoordinator.swift */; };
+		87A1EDF8287560C3007F293A /* TransactionPinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1EDF7287560C3007F293A /* TransactionPinUseCase.swift */; };
+		87A1EDFA28757399007F293A /* CashWithdrawCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1EDF928757399007F293A /* CashWithdrawCoordinator.swift */; };
+		87A1EDFD2875AA08007F293A /* CashWithdrawUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1EDFC2875AA08007F293A /* CashWithdrawUseCase.swift */; };
 		87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */; };
-		87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874692860225B002534F8 /* SourceOfFund.swift */; };
+		87A8746A2860225B002534F8 /* SourceOfFundScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A874692860225B002534F8 /* SourceOfFundScreen.swift */; };
 		87A8746C2860225E002534F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A8746B2860225E002534F8 /* Assets.xcassets */; };
 		87A8746F2860225E002534F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A8746E2860225E002534F8 /* Preview Assets.xcassets */; };
 		87A8747728602C00002534F8 /* ListFundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8747628602C00002534F8 /* ListFundCard.swift */; };
 		87A87479286032B9002534F8 /* FundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A87478286032B9002534F8 /* FundCard.swift */; };
-		87A8747C286048E5002534F8 /* ModelFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8747B286048E5002534F8 /* ModelFund.swift */; };
+		87B11069286D514B00509294 /* ParamTransactionPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B11068286D514B00509294 /* ParamTransactionPin.swift */; };
+		87B1106C286D590A00509294 /* SourceFundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1106B286D590A00509294 /* SourceFundViewModel.swift */; };
+		87B1106E286D625700509294 /* CashWithdrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1106D286D625700509294 /* CashWithdrawViewModel.swift */; };
+		87B11070286DA51C00509294 /* ResponseAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1106F286DA51C00509294 /* ResponseAmount.swift */; };
+		87B11072286DA75F00509294 /* ResponseHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B11071286DA75F00509294 /* ResponseHistory.swift */; };
+		87B11074286DA7C000509294 /* ViewModelHistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B11073286DA7C000509294 /* ViewModelHistoryToken.swift */; };
 		87B822C028642787007E5A9B /* NavigationCustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B822BF28642787007E5A9B /* NavigationCustomBar.swift */; };
 		87B822C228645150007E5A9B /* HistoryToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B822C128645150007E5A9B /* HistoryToken.swift */; };
+		87C96ABB28729FD00046735E /* TransactionPinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C96ABA28729FD00046735E /* TransactionPinViewModel.swift */; };
+		87DB0136286AE92700E12041 /* ResponseFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DB0135286AE92700E12041 /* ResponseFund.swift */; };
+		87DB0138286AE97000E12041 /* Funds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DB0137286AE97000E12041 /* Funds.swift */; };
 		87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF8EE52860599200256C56 /* CashWithdraw.swift */; };
-		FA321A8FAADD1DB3DF40ED58 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.debug.xcconfig"; sourceTree = "<group>"; };
+		3ED8CB14F8E98275C95C51A5 /* Pods-FinalProjectCashWithdrawl.sit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.sit.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.sit.xcconfig"; sourceTree = "<group>"; };
+		509A67C5CD4B74B0D01D00BA /* Pods_FinalProjectCashWithdrawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProjectCashWithdrawl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A15D2CCC20C10A2898131A /* Pods-FinalProjectCashWithdrawl.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.prod.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.prod.xcconfig"; sourceTree = "<group>"; };
 		870968692862C00D004BD3B7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8709686C2862C2DC004BD3B7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		8709686E2862C6EC004BD3B7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -57,12 +73,14 @@
 		874194012863EEFB00170828 /* TransactionPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPin.swift; sourceTree = "<group>"; };
 		8742AA792867F92200E65D84 /* CardHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHistoryToken.swift; sourceTree = "<group>"; };
 		8742AA7C2867FBDB00E65D84 /* DetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryToken.swift; sourceTree = "<group>"; };
+		8761DDE8286BE55E0045926A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		876443E328655D170082FE2F /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
 		876443ED2865740F0082FE2F /* Fund.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fund.json; sourceTree = "<group>"; };
 		876443EF2865891C0082FE2F /* Amount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Amount.json; sourceTree = "<group>"; };
 		876443F1286589590082FE2F /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		876443F32865975D0082FE2F /* History.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = History.json; sourceTree = "<group>"; };
 		876443F5286598010082FE2F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		876C9F20286BF3E40040D174 /* AnyliticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyliticManager.swift; sourceTree = "<group>"; };
 		8790A102286960EF0027D96C /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		8790A106286967340027D96C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		8790A108286967420027D96C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -70,19 +88,31 @@
 		8790A10C28699E730027D96C /* ActiveDetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDetailHistoryToken.swift; sourceTree = "<group>"; };
 		8790A10E2869A0310027D96C /* CancelDetailHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelDetailHistoryToken.swift; sourceTree = "<group>"; };
 		8790D73B286A975800680F6F /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
+		87A1EDF528752A0C007F293A /* TransactionPinCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPinCoordinator.swift; sourceTree = "<group>"; };
+		87A1EDF7287560C3007F293A /* TransactionPinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPinUseCase.swift; sourceTree = "<group>"; };
+		87A1EDF928757399007F293A /* CashWithdrawCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdrawCoordinator.swift; sourceTree = "<group>"; };
+		87A1EDFC2875AA08007F293A /* CashWithdrawUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdrawUseCase.swift; sourceTree = "<group>"; };
 		87A874642860225B002534F8 /* FinalProjectCashWithdrawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectCashWithdrawl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectCashWithdrawlApp.swift; sourceTree = "<group>"; };
-		87A874692860225B002534F8 /* SourceOfFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOfFund.swift; sourceTree = "<group>"; };
+		87A874692860225B002534F8 /* SourceOfFundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOfFundScreen.swift; sourceTree = "<group>"; };
 		87A8746B2860225E002534F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A8746E2860225E002534F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87A8747628602C00002534F8 /* ListFundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFundCard.swift; sourceTree = "<group>"; };
 		87A87478286032B9002534F8 /* FundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCard.swift; sourceTree = "<group>"; };
-		87A8747B286048E5002534F8 /* ModelFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFund.swift; sourceTree = "<group>"; };
+		87A9EA91286E98D600EAC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87B11068286D514B00509294 /* ParamTransactionPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamTransactionPin.swift; sourceTree = "<group>"; };
+		87B1106B286D590A00509294 /* SourceFundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFundViewModel.swift; sourceTree = "<group>"; };
+		87B1106D286D625700509294 /* CashWithdrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdrawViewModel.swift; sourceTree = "<group>"; };
+		87B1106F286DA51C00509294 /* ResponseAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAmount.swift; sourceTree = "<group>"; };
+		87B11071286DA75F00509294 /* ResponseHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHistory.swift; sourceTree = "<group>"; };
+		87B11073286DA7C000509294 /* ViewModelHistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHistoryToken.swift; sourceTree = "<group>"; };
 		87B822BF28642787007E5A9B /* NavigationCustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCustomBar.swift; sourceTree = "<group>"; };
 		87B822C128645150007E5A9B /* HistoryToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryToken.swift; sourceTree = "<group>"; };
+		87C96ABA28729FD00046735E /* TransactionPinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPinViewModel.swift; sourceTree = "<group>"; };
+		87DB0135286AE92700E12041 /* ResponseFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseFund.swift; sourceTree = "<group>"; };
+		87DB0137286AE97000E12041 /* Funds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funds.swift; sourceTree = "<group>"; };
 		87DF8EE52860599200256C56 /* CashWithdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashWithdraw.swift; sourceTree = "<group>"; };
-		99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProjectCashWithdrawl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.release.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.release.xcconfig"; sourceTree = "<group>"; };
+		FEA525E65E4ECAE6D360DC92 /* Pods-FinalProjectCashWithdrawl.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectCashWithdrawl.dev.xcconfig"; path = "Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl.dev.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,19 +120,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA321A8FAADD1DB3DF40ED58 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */,
+				4F6D3DDD0B74B04200F8A402 /* Pods_FinalProjectCashWithdrawl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D72D3D35DCA07FB4B4F750D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509A67C5CD4B74B0D01D00BA /* Pods_FinalProjectCashWithdrawl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		870968662862BFB3004BD3B7 /* PageSourceOfFund */ = {
 			isa = PBXGroup;
 			children = (
-				87A874692860225B002534F8 /* SourceOfFund.swift */,
-				87A8747628602C00002534F8 /* ListFundCard.swift */,
-				87A87478286032B9002534F8 /* FundCard.swift */,
+				87A1EDFB28757B45007F293A /* Component */,
+				87B1106B286D590A00509294 /* SourceFundViewModel.swift */,
+				87A874692860225B002534F8 /* SourceOfFundScreen.swift */,
 			);
 			path = PageSourceOfFund;
 			sourceTree = "<group>";
@@ -111,7 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				87DF8EE52860599200256C56 /* CashWithdraw.swift */,
+				87A1EDF928757399007F293A /* CashWithdrawCoordinator.swift */,
+				87B1106D286D625700509294 /* CashWithdrawViewModel.swift */,
 				8709687A28630C2E004BD3B7 /* FormWithdraw.swift */,
+				87A1EDFC2875AA08007F293A /* CashWithdrawUseCase.swift */,
 			);
 			path = PageCashWithdraw;
 			sourceTree = "<group>";
@@ -119,17 +160,15 @@
 		870968682862BFE6004BD3B7 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				87C96ABE2872C1050046735E /* BottomSheet */,
+				87C96ABD2872C0F80046735E /* SnackBar */,
+				87C96ABC2872C0D80046735E /* TextField */,
 				8709686B2862C2CC004BD3B7 /* ButtonView */,
-				870968692862C00D004BD3B7 /* CustomTextField.swift */,
 				8790D73B286A975800680F6F /* BaseUrl.swift */,
 				8709686E2862C6EC004BD3B7 /* Style.swift */,
 				870968722862EA91004BD3B7 /* HiddenViewModifier.swift */,
 				870968742862EBF7004BD3B7 /* ExtensionView.swift */,
-				87096876286307D2004BD3B7 /* SheetAmount.swift */,
-				87096878286308B7004BD3B7 /* SheetView.swift */,
 				87B822BF28642787007E5A9B /* NavigationCustomBar.swift */,
-				8790A102286960EF0027D96C /* BottomSheet.swift */,
-				8790A10A286981D00027D96C /* ErrorMessage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -142,17 +181,13 @@
 			path = ButtonView;
 			sourceTree = "<group>";
 		};
-		870999282861A91900D76EDE /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		874194002863EE9E00170828 /* PageTransactionPin */ = {
 			isa = PBXGroup;
 			children = (
 				874194012863EEFB00170828 /* TransactionPin.swift */,
+				87A1EDF528752A0C007F293A /* TransactionPinCoordinator.swift */,
+				87A1EDF7287560C3007F293A /* TransactionPinUseCase.swift */,
+				87C96ABA28729FD00046735E /* TransactionPinViewModel.swift */,
 			);
 			path = PageTransactionPin;
 			sourceTree = "<group>";
@@ -179,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				876443E328655D170082FE2F /* JsonReader.swift */,
+				876C9F20286BF3E40040D174 /* AnyliticManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -196,19 +232,33 @@
 		876443F7286599430082FE2F /* PageHistoryToken */ = {
 			isa = PBXGroup;
 			children = (
+				87B11073286DA7C000509294 /* ViewModelHistoryToken.swift */,
 				87B822C128645150007E5A9B /* HistoryToken.swift */,
 				8742AA792867F92200E65D84 /* CardHistoryToken.swift */,
 			);
 			path = PageHistoryToken;
 			sourceTree = "<group>";
 		};
+		87A1EDFB28757B45007F293A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				87A8747628602C00002534F8 /* ListFundCard.swift */,
+				87A87478286032B9002534F8 /* FundCard.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		87A8745B2860225B002534F8 = {
 			isa = PBXGroup;
 			children = (
 				87A874662860225B002534F8 /* FinalProjectCashWithdrawl */,
+				87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */,
+				8761DDE8286BE55E0045926A /* GoogleService-Info.plist */,
+				87A8746B2860225E002534F8 /* Assets.xcassets */,
+				87A8746D2860225E002534F8 /* Preview Content */,
 				87A874652860225B002534F8 /* Products */,
 				A79FD5160607DBE89B6EF171 /* Pods */,
-				FE553CD052F2459CEDEA3560 /* Frameworks */,
+				3D72D3D35DCA07FB4B4F750D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,17 +273,14 @@
 		87A874662860225B002534F8 /* FinalProjectCashWithdrawl */ = {
 			isa = PBXGroup;
 			children = (
+				87A9EA91286E98D600EAC191 /* Info.plist */,
 				8790A106286967340027D96C /* R.generated.swift */,
 				876443E728656A870082FE2F /* Json */,
 				876443E228655CFF0082FE2F /* Util */,
 				874194032863F8E600170828 /* Localization */,
 				870968682862BFE6004BD3B7 /* Component */,
-				870999282861A91900D76EDE /* Repository */,
-				87A8747A286048C3002534F8 /* Model */,
 				87A8747528602BEC002534F8 /* View */,
-				87A874672860225B002534F8 /* FinalProjectCashWithdrawlApp.swift */,
-				87A8746B2860225E002534F8 /* Assets.xcassets */,
-				87A8746D2860225E002534F8 /* Preview Content */,
+				87A8747A286048C3002534F8 /* Model */,
 			);
 			path = FinalProjectCashWithdrawl;
 			sourceTree = "<group>";
@@ -261,28 +308,67 @@
 		87A8747A286048C3002534F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				87A8747B286048E5002534F8 /* ModelFund.swift */,
-				876443F1286589590082FE2F /* Amount.swift */,
-				876443F5286598010082FE2F /* History.swift */,
+				87DB0134286AE91500E12041 /* Response */,
+				87DB0133286AE8A100E12041 /* Object */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		87C96ABC2872C0D80046735E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				87096878286308B7004BD3B7 /* SheetView.swift */,
+				870968692862C00D004BD3B7 /* CustomTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		87C96ABD2872C0F80046735E /* SnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				8790A10A286981D00027D96C /* ErrorMessage.swift */,
+			);
+			path = SnackBar;
+			sourceTree = "<group>";
+		};
+		87C96ABE2872C1050046735E /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				87096876286307D2004BD3B7 /* SheetAmount.swift */,
+				8790A102286960EF0027D96C /* BottomSheet.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		87DB0133286AE8A100E12041 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				876443F5286598010082FE2F /* History.swift */,
+				876443F1286589590082FE2F /* Amount.swift */,
+				87DB0137286AE97000E12041 /* Funds.swift */,
+				87B11068286D514B00509294 /* ParamTransactionPin.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		87DB0134286AE91500E12041 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				87DB0135286AE92700E12041 /* ResponseFund.swift */,
+				87B1106F286DA51C00509294 /* ResponseAmount.swift */,
+				87B11071286DA75F00509294 /* ResponseHistory.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		A79FD5160607DBE89B6EF171 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */,
-				D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */,
+				FEA525E65E4ECAE6D360DC92 /* Pods-FinalProjectCashWithdrawl.dev.xcconfig */,
+				3ED8CB14F8E98275C95C51A5 /* Pods-FinalProjectCashWithdrawl.sit.xcconfig */,
+				83A15D2CCC20C10A2898131A /* Pods-FinalProjectCashWithdrawl.prod.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FE553CD052F2459CEDEA3560 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99C66326E18031E03A6AE228 /* Pods_FinalProjectCashWithdrawl.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,12 +378,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87A874722860225E002534F8 /* Build configuration list for PBXNativeTarget "FinalProjectCashWithdrawl" */;
 			buildPhases = (
-				C59E1942BA6BFA48E88CC101 /* [CP] Check Pods Manifest.lock */,
+				96C79F048E38847387A050AD /* [CP] Check Pods Manifest.lock */,
 				8790A0F8286946040027D96C /* ShellScript */,
 				87A874602860225B002534F8 /* Sources */,
 				87A874612860225B002534F8 /* Frameworks */,
 				87A874622860225B002534F8 /* Resources */,
-				A875F1304C05539EBE2703E7 /* [CP] Embed Pods Frameworks */,
+				876C9F22286C3A550040D174 /* ShellScript */,
+				1F5270E80ED34B338851FFDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,35 +440,14 @@
 				876443EE2865740F0082FE2F /* Fund.json in Resources */,
 				876443F42865975D0082FE2F /* History.json in Resources */,
 				87A8746C2860225E002534F8 /* Assets.xcassets in Resources */,
+				8761DDE9286BE55E0045926A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8790A0F8286946040027D96C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"",
-				"",
-				"",
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n${PODS_ROOT}/SwiftLint/swiftlint\n";
-		};
-		A875F1304C05539EBE2703E7 /* [CP] Embed Pods Frameworks */ = {
+		1F5270E80ED34B338851FFDE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,7 +464,48 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinalProjectCashWithdrawl/Pods-FinalProjectCashWithdrawl-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59E1942BA6BFA48E88CC101 /* [CP] Check Pods Manifest.lock */ = {
+		876C9F22286C3A550040D174 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		8790A0F8286946040027D96C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+				"",
+				"",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n${PODS_ROOT}/SwiftLint/swiftlint\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		96C79F048E38847387A050AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,39 +539,53 @@
 				8790A10D28699E730027D96C /* ActiveDetailHistoryToken.swift in Sources */,
 				87DF8EE62860599200256C56 /* CashWithdraw.swift in Sources */,
 				87B822C228645150007E5A9B /* HistoryToken.swift in Sources */,
+				87A1EDFA28757399007F293A /* CashWithdrawCoordinator.swift in Sources */,
 				87A87479286032B9002534F8 /* FundCard.swift in Sources */,
+				876C9F21286BF3E40040D174 /* AnyliticManager.swift in Sources */,
 				87A8747728602C00002534F8 /* ListFundCard.swift in Sources */,
 				8709686F2862C6EC004BD3B7 /* Style.swift in Sources */,
 				87B822C028642787007E5A9B /* NavigationCustomBar.swift in Sources */,
+				87DB0136286AE92700E12041 /* ResponseFund.swift in Sources */,
 				8790A10B286981D00027D96C /* ErrorMessage.swift in Sources */,
 				8790D73C286A975800680F6F /* BaseUrl.swift in Sources */,
+				87A1EDF628752A0C007F293A /* TransactionPinCoordinator.swift in Sources */,
 				87096877286307D2004BD3B7 /* SheetAmount.swift in Sources */,
-				87A8747C286048E5002534F8 /* ModelFund.swift in Sources */,
+				87B1106E286D625700509294 /* CashWithdrawViewModel.swift in Sources */,
+				87B11070286DA51C00509294 /* ResponseAmount.swift in Sources */,
+				87C96ABB28729FD00046735E /* TransactionPinViewModel.swift in Sources */,
 				87096879286308B7004BD3B7 /* SheetView.swift in Sources */,
 				8790A103286960EF0027D96C /* BottomSheet.swift in Sources */,
+				87A1EDFD2875AA08007F293A /* CashWithdrawUseCase.swift in Sources */,
+				87A1EDF8287560C3007F293A /* TransactionPinUseCase.swift in Sources */,
 				8790A107286967340027D96C /* R.generated.swift in Sources */,
 				8709686A2862C00D004BD3B7 /* CustomTextField.swift in Sources */,
-				87A8746A2860225B002534F8 /* SourceOfFund.swift in Sources */,
+				87A8746A2860225B002534F8 /* SourceOfFundScreen.swift in Sources */,
+				87B11074286DA7C000509294 /* ViewModelHistoryToken.swift in Sources */,
 				87A874682860225B002534F8 /* FinalProjectCashWithdrawlApp.swift in Sources */,
 				876443F6286598010082FE2F /* History.swift in Sources */,
 				8709687B28630C2E004BD3B7 /* FormWithdraw.swift in Sources */,
 				874194022863EEFB00170828 /* TransactionPin.swift in Sources */,
 				870968732862EA91004BD3B7 /* HiddenViewModifier.swift in Sources */,
+				87DB0138286AE97000E12041 /* Funds.swift in Sources */,
 				876443F2286589590082FE2F /* Amount.swift in Sources */,
 				876443E428655D170082FE2F /* JsonReader.swift in Sources */,
 				8742AA7A2867F92200E65D84 /* CardHistoryToken.swift in Sources */,
 				8742AA7D2867FBDB00E65D84 /* DetailHistoryToken.swift in Sources */,
 				8709686D2862C2DC004BD3B7 /* ButtonView.swift in Sources */,
+				87B1106C286D590A00509294 /* SourceFundViewModel.swift in Sources */,
+				87B11069286D514B00509294 /* ParamTransactionPin.swift in Sources */,
+				87B11072286DA75F00509294 /* ResponseHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		87A874702860225E002534F8 /* Debug */ = {
+		87A874702860225E002534F8 /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://private-5a0ca3-richardgozali.apiary-mock.com";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -511,20 +632,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ID_NEON = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		87A874712860225E002534F8 /* Release */ = {
+		87A874712860225E002534F8 /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://google.com";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -565,30 +689,33 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ID_NEON = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Prod;
 		};
-		87A874732860225E002534F8 /* Debug */ = {
+		87A874732860225E002534F8 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57795B6150DD981C0FCD1340 /* Pods-FinalProjectCashWithdrawl.debug.xcconfig */;
+			baseConfigurationReference = FEA525E65E4ECAE6D360DC92 /* Pods-FinalProjectCashWithdrawl.dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FinalProjectCashWithdrawl/Preview Content\"";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProjectCashWithdrawl/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,22 +729,23 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		87A874742860225E002534F8 /* Release */ = {
+		87A874742860225E002534F8 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D01B2A4128B4FC4832831466 /* Pods-FinalProjectCashWithdrawl.release.xcconfig */;
+			baseConfigurationReference = 83A15D2CCC20C10A2898131A /* Pods-FinalProjectCashWithdrawl.prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FinalProjectCashWithdrawl/Preview Content\"";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProjectCashWithdrawl/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -631,7 +759,100 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Prod;
+		};
+		87A9EA8F286E93B200EAC191 /* Sit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://facebook.com";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ID_NEON = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Sit;
+		};
+		87A9EA90286E93B200EAC191 /* Sit */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED8CB14F8E98275C95C51A5 /* Pods-FinalProjectCashWithdrawl.sit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinalProjectCashWithdrawl/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocbcnisp.FinalProjectCashWithdrawl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Sit;
 		};
 /* End XCBuildConfiguration section */
 
@@ -639,20 +860,22 @@
 		87A8745F2860225B002534F8 /* Build configuration list for PBXProject "FinalProjectCashWithdrawl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87A874702860225E002534F8 /* Debug */,
-				87A874712860225E002534F8 /* Release */,
+				87A874702860225E002534F8 /* Dev */,
+				87A9EA8F286E93B200EAC191 /* Sit */,
+				87A874712860225E002534F8 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 		87A874722860225E002534F8 /* Build configuration list for PBXNativeTarget "FinalProjectCashWithdrawl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87A874732860225E002534F8 /* Debug */,
-				87A874742860225E002534F8 /* Release */,
+				87A874732860225E002534F8 /* Dev */,
+				87A9EA90286E93B200EAC191 /* Sit */,
+				87A874742860225E002534F8 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 /* End XCConfigurationList section */
 	};

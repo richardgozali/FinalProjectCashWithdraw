@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CancelDetailHistoryToken: View {
     @Binding var selectedHistoryToken: History
-    @Binding var navigationSelection: String?
+    @Binding var sourceHistoryNavigation: String?
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(spacing: 20) {
             Image("IconCancel")
@@ -27,8 +28,7 @@ struct CancelDetailHistoryToken: View {
                 buttonStyle: PrimaryButtonStyle(),
                 label: "Done",
                 action: {
-                    self.navigationSelection = nil
-                    print(self.navigationSelection)
+                    self.presentationMode.wrappedValue.dismiss()
                 }
             )
             Spacer()

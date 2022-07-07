@@ -113,12 +113,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 4 files.
   struct file {
     /// Resource file `Amount.json`.
     static let amountJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Amount", pathExtension: "json")
     /// Resource file `Fund.json`.
     static let fundJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Fund", pathExtension: "json")
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
     /// Resource file `History.json`.
     static let historyJson = Rswift.FileResource(bundle: R.hostingBundle, name: "History", pathExtension: "json")
 
@@ -131,6 +133,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "Fund", withExtension: "json")`
     static func fundJson(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.fundJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -169,7 +177,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 19 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 27 localization keys.
     struct localizable {
       /// Value: 8001 Wrong Password
       static let engErrorMessage = Rswift.StringResource(key: "eng.error.message", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -181,20 +189,30 @@ struct R: Rswift.Validatable {
       static let engBalance = Rswift.StringResource(key: "eng.balance", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Cash Withdraw
       static let engCashwithdrawTitle = Rswift.StringResource(key: "eng.cashwithdraw.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Cash Withdrawal Token
+      static let engCashwithdrawlTokenTitle = Rswift.StringResource(key: "eng.cashwithdrawl.token.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Continue
+      static let engContinue = Rswift.StringResource(key: "eng.continue", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Create A 6 Pin to Withdraw a Cash
       static let engPinPlaceholder = Rswift.StringResource(key: "eng.pin.placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: IDR
       static let engIdr = Rswift.StringResource(key: "eng.idr", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Input The 6-digit token below to the ATM screen to withdraw cash.
+      static let engCashwithdrawltokenPin = Rswift.StringResource(key: "eng.cashwithdrawltoken.pin", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Insert Amount
       static let engAmountPlaceholder = Rswift.StringResource(key: "eng.amount.placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Insert Phone Number
       static let engPhonePlaceholder = Rswift.StringResource(key: "eng.phone.placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Insert the 6-digit Transaction PIN
+      static let engInsertpin = Rswift.StringResource(key: "eng.insertpin", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Insufficient Balance
       static let engBalanceTitle = Rswift.StringResource(key: "eng.balance.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Masukan Nomor Telepon
       static let indPhone = Rswift.StringResource(key: "ind.phone", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Mobile number can't be empty
       static let engPhoneError = Rswift.StringResource(key: "eng.phone.error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Ok
+      static let engOk = Rswift.StringResource(key: "eng.ok", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Phone Number
       static let engPhoneTitle = Rswift.StringResource(key: "eng.phone.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Pin can't be empty
@@ -205,10 +223,16 @@ struct R: Rswift.Validatable {
       static let engTitle = Rswift.StringResource(key: "eng.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Sumber Dana
       static let indTitle = Rswift.StringResource(key: "ind.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: This token is for the withdrawal of IDR   %@   Valid Until :
+      static let engActivecashwithdrawlSubtitle = Rswift.StringResource(key: "eng.activecashwithdrawl.subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Transaction Pin
+      static let engTransactionTitle = Rswift.StringResource(key: "eng.transaction.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Withdrawal Pin
       static let engPinTitle = Rswift.StringResource(key: "eng.pin.title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Your account balance is insufficient to continue this transaction
       static let engBalanceSubtitle = Rswift.StringResource(key: "eng.balance.subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: loading
+      static let engLoading = Rswift.StringResource(key: "eng.loading", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: 8001 Wrong Password
       static func engErrorMessage(preferredLanguages: [String]? = nil) -> String {
@@ -275,6 +299,32 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("eng.cashwithdraw.title", bundle: bundle, comment: "")
       }
 
+      /// Value: Cash Withdrawal Token
+      static func engCashwithdrawlTokenTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.cashwithdrawl.token.title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.cashwithdrawl.token.title"
+        }
+
+        return NSLocalizedString("eng.cashwithdrawl.token.title", bundle: bundle, comment: "")
+      }
+
+      /// Value: Continue
+      static func engContinue(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.continue", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.continue"
+        }
+
+        return NSLocalizedString("eng.continue", bundle: bundle, comment: "")
+      }
+
       /// Value: Create A 6 Pin to Withdraw a Cash
       static func engPinPlaceholder(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -301,6 +351,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("eng.idr", bundle: bundle, comment: "")
       }
 
+      /// Value: Input The 6-digit token below to the ATM screen to withdraw cash.
+      static func engCashwithdrawltokenPin(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.cashwithdrawltoken.pin", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.cashwithdrawltoken.pin"
+        }
+
+        return NSLocalizedString("eng.cashwithdrawltoken.pin", bundle: bundle, comment: "")
+      }
+
       /// Value: Insert Amount
       static func engAmountPlaceholder(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -325,6 +388,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("eng.phone.placeholder", bundle: bundle, comment: "")
+      }
+
+      /// Value: Insert the 6-digit Transaction PIN
+      static func engInsertpin(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.insertpin", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.insertpin"
+        }
+
+        return NSLocalizedString("eng.insertpin", bundle: bundle, comment: "")
       }
 
       /// Value: Insufficient Balance
@@ -364,6 +440,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("eng.phone.error", bundle: bundle, comment: "")
+      }
+
+      /// Value: Ok
+      static func engOk(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.ok", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.ok"
+        }
+
+        return NSLocalizedString("eng.ok", bundle: bundle, comment: "")
       }
 
       /// Value: Phone Number
@@ -431,6 +520,34 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("ind.title", bundle: bundle, comment: "")
       }
 
+      /// Value: This token is for the withdrawal of IDR   %@   Valid Until :
+      static func engActivecashwithdrawlSubtitle(_ value1: String, preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          let format = NSLocalizedString("eng.activecashwithdrawl.subtitle", bundle: hostingBundle, comment: "")
+          return String(format: format, locale: applicationLocale, value1)
+        }
+
+        guard let (locale, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.activecashwithdrawl.subtitle"
+        }
+
+        let format = NSLocalizedString("eng.activecashwithdrawl.subtitle", bundle: bundle, comment: "")
+        return String(format: format, locale: locale, value1)
+      }
+
+      /// Value: Transaction Pin
+      static func engTransactionTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.transaction.title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.transaction.title"
+        }
+
+        return NSLocalizedString("eng.transaction.title", bundle: bundle, comment: "")
+      }
+
       /// Value: Withdrawal Pin
       static func engPinTitle(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -455,6 +572,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("eng.balance.subtitle", bundle: bundle, comment: "")
+      }
+
+      /// Value: loading
+      static func engLoading(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("eng.loading", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "eng.loading"
+        }
+
+        return NSLocalizedString("eng.loading", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
